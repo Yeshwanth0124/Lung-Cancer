@@ -1,6 +1,7 @@
-flask
-pandas
-numpy
-joblib
 json
 render_template
+flask==3.0.0
+pandas==2.1.0
+numpy==1.25.0
+joblib==1.3.2
+

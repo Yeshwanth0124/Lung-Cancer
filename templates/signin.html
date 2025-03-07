@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="{{url_for( 'static', filename='signin.css')}}">
+</head>
+<body>
+    <header class="header-content">
+        <h1>🫁</h1>
+        <h2>LCbyAI</h2>
+        <nav>
+            <a href="/home" id="A1">Home</a>
+            <a href="#"id="A2" onclick="alert('Basic html page to identify the Lung-Cancer Patient using Artificial Intelligence');">About</a>
+            <a href="#"  onclick="alert('were providing the service of Lung_Cancer detection using Machine Learning')" id="A3">Services</a>
+            <a href="#" id="A4">Contact</a>
+        </nav>
+    </header>
+    <div class="Login-container" id="Login-form">
+        <form>
+            <h1>Login</h1>
+            😊<input type="text" id="username_login" placeholder="Email" required><br>
+            🔒<input type="password" id="password_login" placeholder="Password" required><br>
+            <button type="submit" id="Submit" onclick="Login()">Login</button>
+            <p>New user!
+                <a href="#" id="a-signup" onclick="signup()">SignUp</a>
+            </p>
+        </form>
+    </div>
+        <form>
+            <div class="containter-form" id="signup-form" style="display:none;">
+                <b>FirstName</b>: <input type="text" id="firstname_signup" placeholder="FirstName" required><br>
+                <b>LastName</b> : <input type="password" id="lastname_signup" placeholder="LastName" required><br>
+                <b id="B1">Email</b> : <input type="text" id="Email_signup" placeholder="Email" required><br>
+                <b>Password</b> : <input type="password" id="password_signup" placeholder="Password" required><br>
+                <button type="submit" id="Submit_signup" onclick="SignIn()">SignIn</button>
+            </div>
+        </form>
+    </id>
+    <script>
+        function Login()
+        {
+            username = document.getElementById("username_login").value;
+            password = document.getElementById("password_login").value;
+            if(username==="Yeshwanth"&&password==="Yeshu@0124"||username==='yeshwanth'&&password==='yeshu@0124')
+        {
+            window.location.href = "/home";
+            alert("Login Successful");
+        }
+        else{
+            alert("Invalid Details!");
+        }
+        }
+        function signup()
+        {
+            firstname = document.getElementById("firstname_signup").value;
+            lastname = document.getElementById("lastname_signup").value;
+            email = document.getElementById("email_signup").value;
+            password = document.getElementById("password_signup").value;
+        }
+        function signup()
+        {
+            const login = document.getElementById('Login-form');
+            const asignup = document.getElementById('a-signup');
+            const signup = document.getElementById('signup-form');
+            login.style.display='none';
+            signup.style.display='block';
+        }
+        function SignIn()
+        {
+            const signin = document.getElementById('Submit_signup');
+            signupcontent = document.getElementById('signup-form');
+            logincontent = document.getElementById('Login-form');
+            signupcontent.style.display='none';
+            logincontent.style.display='block';
+        }
+    </script>
+</body>
+</html>

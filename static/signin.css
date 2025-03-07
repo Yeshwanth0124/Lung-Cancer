@@ -1,0 +1,153 @@
+body
+{
+    background-image: url("https://images.pexels.com/photos/531880/pexels-photo-531880.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+    align-items:center;
+    background-position: center;
+    background-size: cover;
+    height:70vh;
+    font-family: 'Courier New', Courier, monospace;
+    margin-left: 50px;
+    margin-right: auto;
+}
+.header-content
+{
+    display:flex;
+    justify-content: start;
+    color:white;
+    align-items: center;
+    
+}
+nav
+{
+    display: flex;
+    margin-left:950px;
+    gap:20px;
+}
+.header-content a
+{
+    color:white;
+    background-color:transparent;
+    text-decoration:none;
+    font-size:large;
+}
+.header-content a:hover
+{
+    font-size:x-large;
+    font-weight: bolder;
+
+}
+.Login-container
+{
+    background-color: #f4f4f4;
+    width: fit-content;
+    padding:20px;
+    display:flex;
+    align-items: center;    
+    margin-left:auto;
+    margin-right: auto;
+    margin-top:100px;
+    border-radius:25px;
+    border-top:solid 10px;
+    border-bottom:solid 10px;
+}
+.Login-container input{
+    margin-bottom:5px;
+    border:none;
+    background-color: transparent;
+    border-bottom:solid 5px;
+    padding: 10px;
+    width:300px;
+    border-radius: 10px;
+}
+.Login-container h1
+{
+    color:orange;
+    display:flex;
+    justify-content: start;
+    
+}
+.Login-container button
+{
+    width:250px;    
+    background-color:orange;
+    color:white;
+    border-radius: 8px;
+    border-bottom:solid 5px;   
+    text-align:center;
+    cursor:pointer;
+    margin-left:30px;
+    padding:10px;
+    padding-bottom:10px;
+    font-size: larger;
+}
+.Login-container button:hover
+{
+    border-radius:30px;
+    border-right: solid 5px;
+    border-left:5px solid;
+    font-size: x-large;
+    font-weight: bolder;
+}
+.Login-container p
+{
+    margin-left:30px;
+}
+#a-signup
+{
+    text-decoration: none;
+    color:blue; 
+}
+#a-signup:hover
+{
+    text-decoration: underline;
+    font-size:large;
+}
+.containter-form
+{
+    background-color: #f4f4f4;
+    width: fit-content;
+    padding:20px;
+    align-items: center;    
+    margin-left:auto;
+    margin-right: auto;
+    margin-top:130px;
+    border-radius:25px;
+    border-right:10px solid;
+    border-left:10px solid;
+}
+.containter-form input{
+    margin-bottom:5px;
+    border:none;
+    background-color: transparent;
+    border-bottom:solid 5px;
+    padding: 10px;
+    width:300px;
+    border-radius: 10px;
+    
+}
+.containter-form b
+{
+    margin-right:20px;
+}
+#B1
+{
+    margin-right:49px;
+}
+#Submit_signup
+{
+    border:none;
+    color:white;
+    background-color: black;
+    width:250px;
+    height:3rem;
+    margin-left:130px;
+    border:none;
+    border-radius:10px;
+    border-bottom:solid 10px;
+    font-weight: bold;
+    cursor:pointer;
+}
+#Submit_signup:hover
+{
+    font-size: x-large;
+}

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lung-Cancer Detection</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='webpage.css') }}">
+</head>
+<body>
+   <header class="header-content">
+        <h1>🫁</h1>
+        <h2>LCbyAI</h2>
+        <nav>
+            <a href="/home" id="A1">Home</a>
+            <a href="#"id="A2" onclick="alert('Basic html page to identify the Lung-Cancer Patient using Artificial Intelligence');">About</a>
+            <a href="#"  onclick="alert('were providing the service of Lung_Cancer detection using Machine Learning')" id="A3">Services</a>
+            <a href="#" id="A4">Contact</a>
+            <button id="head-B1">Login</button>
+        </nav>
+    </header>
+   <div class="form-of-lung">
+        <form id="form-of-lung-details" method='POST' action="/fetchdata">
+            <h2>Lung-Cancer</h2>
+            <input type="text" placeholder="Name" id="name" name="name" required>
+            <input type="text" placeholder="Gender[M/F]" id="gender" name="gender" required><br>
+            <input type="number" placeholder="Age" id="age" name ="age" required>
+            <input type="text" placeholder="Smoking(Yes/No)" id="smoking" name="smoking" required><br>
+            <input type="text" placeholder="YellowFingers[Yes/No]" id="yellowfingers" name="yellowfingers" required>
+            <input type="text" placeholder="Anxity[Yes/No]" id="anxiety" name="anxiety" required><br>
+            <input type="text" placeholder="PeerPressure[Yes/No]" id="peerpressure" name="peerpressure" required>
+            <input type="text" placeholder="ChronicDisease[Yes/No]" id="chronic" name="chronic" required><br>
+            <input type="text" placeholder="Fatigue[Yes/No]"  id="fatigue" name="fatigue" required>
+            <input type="text" placeholder="Allergy[Yes/No]" id="allergy" name="allergy" required ><br>
+            <input type="text" placeholder="Wheezing[Yes/No]" id="wheezing" name="wheezing" required >
+            <input type="text" placeholder="AlchoholConsuming[Yes/No]" id="alchohol" name="alchohol" required ><br>
+            <input type="text" placeholder="Couching[Yes/No]" id="coughing" name="coughing" required>
+            <input type="text" placeholder="ShortnessOfBreath[Yes/No]" id="shortnessofbreath" name="shortnessofbreath" required><br>
+            <input type="text" placeholder="SwallowingDifficulty[Yes/No]" id="swallowingdifficulty" name="swallowingdifficulty" required >
+            <input type="text" placeholder="ChestPain[Yes/No]" id="chestpain" name="chestpain" required ><br>
+            <button type="submit" id="B1">Predict</button>
+            <button type="reset" id="B2">Reset</button>
+        </form>
+    </div>
+<script>
+        login = document.getElementById("head-B1");
+        login.addEventListener('click',function(){
+            window.location.href="/signin";
+        })        
+        /*document.getElementById("B1").addEventListener('click',function(event){
+            event.preventDefault();
+            fetch("/predict")
+            .then(response => response.json())
+            .then(data => {
+                console.log(data);
+                if(data.prediction)
+            {
+                alert("prediction is:"+ data.prediction);
+            }
+                else{
+                    alert("Error"+data.error);
+                }
+            });
+        });*/
+
+
+</script>
+</body>
+</html>

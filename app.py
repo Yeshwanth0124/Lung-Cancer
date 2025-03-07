@@ -53,24 +53,6 @@ def data():
             return jsonify("Lung Cancer")
     except Exception as e:
         return jsonify({"error":str(e)})
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 '''@app.route("/predict")
  def predict():
      try:

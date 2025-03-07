@@ -2,6 +2,5 @@ flask
 pandas
 numpy
 joblib
-pickle
 json
 render_template
